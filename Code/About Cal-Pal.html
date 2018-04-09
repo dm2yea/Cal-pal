@@ -4,38 +4,46 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="Cal-Pal style.css">
         <title>About Cal-Pal</title>
-        <script src="tabs.js"></script>
+        <script src="dropdown.js"></script>
     </head>
     <body>
         <h1>Cal-Pal</h1>
         <nav>
             <ul class="topbar">
-                <li><a class="top" href="Cal-Pal%20homepage.html">Home</a></li>
-                <li><a class="top" href="manage%20account.html">Manage Account</a></li>
-                <li><a class="top" href="settings.html">Settings</a></li>
+                <li><a class="top" href="Cal-Pal%20homepage.html">Home</a></li>            
                 <li style="float: right"><a class="top" href="../index.html">Logout</a></li>
+                <li style="float: right"><a class="top" href="help.html">Help</a></li>
+                <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Account</button>
+                <div class="dropdown-content" id="dropDown">
+                    <a class="top" href="appointment%20list.html">Appointment List</a>
+                    <a class="top" href="previous%20appointments.html">Previous Appointments</a>
+                    <a class="top" href="manage%20account.html">Manage Account</a>
+                </div>
+                </div> 
+                <li><a class="top" href="About%20Cal-Pal.html">About Cal-Pal</a></li>
+                <li><a class="top" href="settings.html">Settings</a></li>
             </ul>
         </nav>
-            <nav class="Navigation">
-                <div class="column1">
-                <h4>Navigation</h4>
-                    <ul class="sidebar">
-                        <li><a href="Cal-Pal%20homepage.html">Home</a></li>
-                        <li><a href="appointment%20list.html">Appointment List</a></li>
-                        <li><a href="previous%20appointments.html">Previous Appointments</a></li>
-                        <li><a href="manage%20account.html">Manage Account</a></li>
-                        <li><a href="settings.html">Settings</a></li>
-                        <li><a href="About%20Cal-Pal.html">About Cal-Pal</a></li>
-                        <li><a href="help.html">Help</a></li>
-                    </ul>
-                </div>
-            </nav>
-        <div class="column2">
-            <h2>About Cal-Pal</h2>
-            <h3>Developers</h3>
-                <p>Cal-Pal started as a project for a computer science class at Louisiana State University. The goal was to create something longer and more complex than the students had attempted before. Classmates Devin Tullier, Josh Duke, Mark Thibodeaux, Chris Walker, and Eric Tran came up with Cal-Pal. </p>
-        </div>
         <div class="column1">
+            <h2>About Cal-Pal</h2>
+            <h3>Origin</h3>
+                <p>Cal-Pal started as a project for a computer science class at Louisiana State University. The goal was to create something longer and more complex than the students had attempted before. Classmates Devin Tullier, Josh Duke, Mark Thibodeaux, Chris Walker, and Eric Tran came up with Cal-Pal. </p>
+            <h3>Developers</h3>
+            <dl>
+                <dt>Devin Tullier</dt>
+                    <dd>Obviously the best and most skilled member of the group.</dd>
+                <dt>Josh Duke</dt>
+                    <dd>I guess he's ok.</dd>
+                <dt>Mark Thibodeaux</dt>
+                    <dd>Still salty about him messing up the site.</dd>
+                <dt>Chris Walker</dt>
+                    <dd>Never bothers to show up so can't say much else.</dd>
+                <dt>Eric Tran</dt>
+                    <dd>By far the biggest weeb.</dd>
+            </dl>
+        </div>
+        <div class="column2">
                 <h2>Today's Schedule</h2>
             </div>
     </body>
