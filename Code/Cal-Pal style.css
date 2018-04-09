@@ -4,7 +4,7 @@ html {
 
 .topbar {
     list-style-type: none;
-    margin: 0;
+    margin-bottom: 2em;
     padding: 0;
     overflow: hidden;
     background-color: darkslateblue;
@@ -20,10 +20,6 @@ li a.top {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-body {
-
 }
 
 h1, h2{
@@ -44,7 +40,7 @@ li a {
     
 }
 
-li a:hover {
+a:hover {
     background-color: gray;
     color: white;
 }
@@ -52,13 +48,13 @@ li a:hover {
 /* Create two equal columns that floats on the sides */
 .column1{
     float: left;
-    width: 15%;
+    width: 70%;
 }
 
 /* Create a column that floats in the middle */
 .column2{
     float: left;
-    width: 70%;
+    width: 30%;
 }
 
 @media (max-width: 600px) {
@@ -66,15 +62,48 @@ li a:hover {
         width: 100%;
     }
 }
-    
-.cal{
-    text-align: center;
+
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
 
-#tabContainer {
-    border: 2em;
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    width: 120px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
 }
 
-#tabs {
-    text-emphasis: 2em;
+.dropbtn:hover {
+    background-color: gray;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgray;
+}
+
+.show {
+    display: block;
 }
